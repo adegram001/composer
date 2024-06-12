@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav style="font-size: 23px;font-family: sans-serif;font-weight: 400; color: RGB(68, 68, 255); font-stretch: 100%; margin-left: 130px;margin-top: 20px;line-height: 34.5px;margin: 20px 141.667px 40px;">
+           <a>&#127968    Home</a>
+           <a style="border-left: 1.5px solid grey;"></a>
+           <a style="color: black;margin-left: 4px;">Getting Started</a>
+           <a style="border-left: 1.5px solid grey;"></a>
+           <a style="margin-left: 4px;">Download</a>
+           <a style="border-left: 1.5px solid grey;"></a>
+           <a style="margin-left: 4px;">Documentation</a>
+           <a style="border-left: 1.5px solid grey;"></a>
+           <a style="margin-left: 4px;">Browse Packages</a>
+        </nav>
+    </header>
+    <section>
+        <ol style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: 400;font-stretch: 100%; line-height: 24px; vertical-align: baseline; margin-left: 140px; float: left;">
+            <li><a style="color: rgb(68,68,255);">Dependecncy management</a></li>
+            <li><a style="color: rgb(68,68,255);">System Requirement</a></li>
+            <li>Installations - Linux / Unix / macOS
+                <ol>
+                    <li>Downloading the Composer Executable
+                        <ol><li>Locally</li>
+                        <li>Gbobally</li></ol>
+                    </li>
+                </ol>
+            </li>
+            <li style="margin-top: 15px;">Installations - Windows
+                <ol>
+                    <li>Using the Installer</li>
+                    <li>Manaul Installation</li>
+                </ol>
+            </li>
+            <li style="margin-top: 15px;">Docker Image</li>
+            <li>Using Composer</li>
+        </ol>
+        <form action="search" style="padding-left: 950px;">
+            <input type="search" placeholder="Search" style="font-size: 15px; font-weight: 500; color: RGB(28, 30, 33); border-radius: 20px; border: 1px solid white; height: 35px; width: 155px; background-color: rgb(235,237,240);">
+        </form>
+    </section>
+    <article style="margin: 16px 0px; margin-top: 300px; margin-left: 140px; width: 70%; font-family: Arial, Helvetica, sans-serif;">
+        <h1 style="line-height: 39px; font-family: Arial, Helvetica, sans-serif;font-size: 30px; font-weight: 400;">Introduction <a style="color: rgb(204,204,204); font-size: 30px; font-weight: 400; font-family: sans-serif;">#</a></h1>
+        <p>Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.</p>
+        <h2 style="line-height: 24px;">Dependency management <a style="color: rgb(204,204,204); font-size: 24px; font-weight: 700; font-family: sans-serif;">#</a></h2>
+        <p>Composer is <b>not</b> a package manager in the same sense as Yum or Apt are. Yes, it deals with "packages" or libraries, but it manages them on a per-project basis, installing them in a directory (e.g. <button>vendor</button> ) inside your project. By default, it does not install anything globally. Thus, it is a dependency manager. It does however support a "global" project for convenience via the <a href="https://getcomposer.org/doc/03-cli.md#global" style="text-decoration: none;">global</a> command.</p>
+
+        <p> This idea is not new and Composer is strongly inspired by node's <a href="https://www.npmjs.com/" style="text-decoration: none;">npm</a> and ruby's <a href="https://bundler.io/" style="text-decoration: none;">bundler</a>.</p>
+        <p>hello</p>
+        <p style="line-height: 24px;">Suppose:</p>
+        <p><ol><li>You have a project that depends on a number of libraries.</li>
+           <li>Some of those libraries depend on other libraries.</li></ol>
+        </p>
+        <p style="line-height: 24px;">Composer:</p>
+        <p><ol><li>Enables you to declare the libraries you depend on.</li>
+        <li>Finds out which versions of which packages can and need to be installed, and installs them (meaning it downloads them into your project).</li>
+        <li>You can update all your dependencies in one command.</li></ol></p>
+        <h3 style="line-height: 24px;">System Requirements <a style="color: rgb(204,204,204); font-size: 24px; font-weight: 700; font-family: sans-serif;">#</a></h3>
+        <p style="line-height: 24px;">Composer in its latest version requires PHP 7.2.5 to run. A long-term-support version (2.2.x) still offers support for PHP 5.3.2+ in case you are stuck with a legacy PHP version. A few sensitive php settings and compile flags are also required, but when using the installer you will be warned about any incompatibilities.</p>
+
+            <p style="line-height: 24px;">Composer needs several supporting applications to work effectively, making the process of handling package dependencies more efficient. For decompressing files, Composer relies on tools like <button>7z</button> (or <button>7zz</button> ), <button>gzip</button>, <button>tar</button>, <button>unrar</button>, <button>unzip</button> and <button>xz</button>. As for version control systems, Composer integrates seamlessly with Fossil, Git, Mercurial, Perforce and Subversion, thereby ensuring the application's smooth operation and management of library repositories. Before using Composer, ensure that these dependencies are correctly installed on your system.</p>
+            
+            <p style="line-height: 24px;">Composer is multi-platform and we strive to make it run equally well on Windows, Linux and macOS.</p>
+
+    </article>
+</body>
+</html>
